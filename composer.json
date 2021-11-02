@@ -1,0 +1,45 @@
+{
+    "name": "57feng/aliyun-vod",
+    "description": "AliYun Vod For Hyperf",
+    "keywords": [
+        "php",
+        "swoole",
+        "hyperf",
+        "aliyun",
+        "vod"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2",
+        "hyperf/utils": "^2.2.0",
+        "57feng/aliyun-core": "~2.2.0"
+    },
+    "require-dev": {
+        "57feng/aliyun-core": "~2.2.0",
+        "php": ">=7.2"
+    },
+    "authors": [
+        {
+            "name": "57feng",
+            "email": "Dylan6416@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ym\\AliyunVod\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YmTest\\AliyunVod\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Ym\\AliyunVod\\ConfigProvider"
+        }
+    }
+}
